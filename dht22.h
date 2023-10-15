@@ -14,6 +14,10 @@
 #ifndef __DHT22_H__
 #define __DHT22_H__
 
+#ifdef __cplusplus
+extern "C" {
+#endif //__cplusplus
+
 #include <stdint.h>
 
 /*
@@ -68,5 +72,8 @@ uint8_t dht_read_hum(struct dht22 *dht, float *hum);
  */
 uint8_t dht_read_data(struct dht22 *dht, float *temp, float *hum);
 
+#ifdef __cplusplus
+}
+#endif //__cplusplus
 
 #endif
